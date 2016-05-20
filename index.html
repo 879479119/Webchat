@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul{
+            margin:0;
+            padding:0;
+            font-family: 微软雅黑,serif;
+        }
+        li{
+            list-style: none;
+        }
+        canvas{
+            border: solid 5px #00bfff;
+            cursor: url("pointer.ico") ,default;
+
+            transform: translateZ(0);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas width="500" height="500" id="canvas"></canvas>
+    <div class="control">
+        <a href="javascript:" class="color-picker">
+            <div id="cur-color" class="cur-color"></div>
+            <div id="choose-color" class="choose-color">
+                <div class="cc-head">
+                    <span id="cur-name">#e60012</span>
+                    <div class="cur-bar" id="cur-show"></div>
+                </div>
+                <div class="cc-body">
+                    <table>
+                        <tr>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                        </tr>
+                        <tr>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                        </tr>
+                        <tr>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                            <td title="233333"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </a>
+        <div class="size-picker">
+            <ul class="choose-size">
+                <li><div class="small" id="size-s"></div></li>
+                <li><div class="medium" id="size-m"></div></li>
+                <li><div class="large" id="size-l"></div></li>
+            </ul>
+        </div>
+        
+    </div>
+<script src="jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
