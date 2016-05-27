@@ -1,0 +1,10 @@
+body {
+  margin: 0; }
+  body h1 {
+    padding: 2px; }
+  body h2 {
+    margin: 5px; }
+  body h3 {
+    color: #000; }
+  body h4 {
+    background: #fff; }

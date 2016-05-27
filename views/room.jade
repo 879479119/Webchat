@@ -1,0 +1,13 @@
+//
+   Created by zi on 2016/5/25.
+
+extends template
+
+block script
+    link(rel="styleSheet",type="text/css",href="../css/" + enter + ".css")
+    script(src="../script/lib/require.js",data-main="../script/" + enter)
+
+block content
+    p#name
+    button#submit 发送一条消息
+    button#close 断开连接

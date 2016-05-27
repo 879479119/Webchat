@@ -1,0 +1,125 @@
+.control{
+  .color-picker{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ddd;
+    .cur-color{
+      width: 26px;
+      height: 26px;
+      margin: 2px;
+      background: #e60012;
+    }
+    .choose-color{
+      position: absolute;
+      display: none;
+      top: 30px;
+      padding: 5px;
+      border-radius: 5px;
+      border: solid 1px #ccc;
+      background: #fff;
+      cursor: default;
+      .cc-head{
+        overflow: auto;
+        padding: 0 2px 5px 2px;
+        border-bottom: solid 1px #eee;
+        span{
+          display: inline-block;
+          float: right;
+          width: 74px;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          color: #888;
+        }
+        .cur-bar{
+          float: right;
+          height: 20px;
+          width: 100px;
+          background: #e60012;
+        }
+      }
+      .cc-body{
+        padding-top: 5px;
+        table{
+          width: 178px;
+          td{
+            width: 18px;
+            height: 18px;
+            background: #00bfff;
+          }
+        }
+      }
+    }
+  }
+  .size-picker{
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 26px;
+    padding: 2px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    .choose-size{
+      overflow: auto;
+      margin-top: 3px;
+      li{
+        float: left;
+        padding: 9px;
+        &:first-child{
+          padding: 10px;
+        }
+        &:last-child{
+          padding: 8px;
+        }
+      }
+      .small{
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #000;
+        box-shadow: 0 0 3px #000;
+      }
+      .medium{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #000;
+        box-shadow: 0 0 3px #000;
+      }
+      .large{
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #000;
+        box-shadow: 0 0 3px #000;
+      }
+    }
+  }
+  .shadow-set{
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px 0 5px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    vertical-align: top;
+    form{
+      margin-top: 5px;
+      color: #888;
+    }
+  }
+  .clear-all{
+    display: inline-block;
+    height: 30px;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+    vertical-align: top;
+    button{
+      display: block;
+      height: 100%;
+      background: transparent;
+      border: none;
+    }
+  }
+}
